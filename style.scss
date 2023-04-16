@@ -1,7 +1,7 @@
 $blue-color: #7e68fa;
 $black: #000;
 $semi-black: #222;
-$white : #fff;
+$white: #fff;
 
 *,
 ::after,
@@ -44,12 +44,23 @@ h1 {
 h2 {
   text-align: center;
   font-family: "Italiana";
-  font-style: normal;
   font-weight: 400;
   font-size: 90px;
   line-height: 88px;
   color: $semi-black;
   margin-bottom: 77px;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 // ---------- NAV BAR SECTION ----------
@@ -99,9 +110,10 @@ header {
   }
 }
 
+// ---------- HERO SECTION ----------
+
 main {
   section#hero-section {
-
     div#container-hero {
       display: flex;
       flex-wrap: wrap;
@@ -117,23 +129,43 @@ main {
         }
 
         div#btn-hero {
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 140px;
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 140px;
 
-            a {
-                &:first-child {
-                    padding: 5px 20px;
-                    border-radius: 50px;
-                    background-color: $blue-color;
-                    color: $white;
-                }
+          a {
+            &:first-child {
+              padding: 5px 20px;
+              border-radius: 50px;
+              background-color: $blue-color;
+              color: $white;
             }
+          }
         }
       }
 
       div#item-right-hero {
         width: 50%;
+      }
+    }
+  }
+
+
+
+  // ---------- ABOUT-ME SECTION ----------
+
+  section#about-me-section {
+    background-color: #f05d7b;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    div#container-about-me-section {
+      p {
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 2px;
+        text-align: start;
+        color: $white;
       }
     }
   }
