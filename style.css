@@ -78,8 +78,8 @@ header nav#nav-top ul {
   display: flex;
 }
 header nav#nav-top ul li {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 header nav#nav-top ul li a {
   font-weight: 600;
