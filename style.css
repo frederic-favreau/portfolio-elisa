@@ -107,7 +107,7 @@ main section#hero-section div#container-hero div#item-left-hero {
   width: 50%;
 }
 main section#hero-section div#container-hero div#item-left-hero p#description-hero {
-  text-align: center;
+  text-align: start;
 }
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
   display: flex;
