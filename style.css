@@ -1,0 +1,112 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row-limit-size {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  margin-bottom: 77px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 88px;
+  color: #222;
+  margin-bottom: 77px;
+}
+
+header nav#nav-top {
+  display: flex;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+header nav#nav-top div#text-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7e68fa;
+  margin-right: auto;
+}
+header nav#nav-top ul {
+  display: flex;
+}
+header nav#nav-top ul li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+header nav#nav-top ul li a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+}
+header nav#nav-top ul li:last-child a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #7e68fa;
+}
+
+main section#hero-section div#container-hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section#hero-section div#container-hero div#item-left-hero {
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  width: 50%;
+}
+main section#hero-section div#container-hero div#item-left-hero p#description-hero {
+  text-align: center;
+}
+main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 140px;
+}
+main section#hero-section div#container-hero div#item-left-hero div#btn-hero a:first-child {
+  padding: 5px 20px;
+  border-radius: 50px;
+  background-color: #7e68fa;
+  color: #fff;
+}
+main section#hero-section div#container-hero div#item-right-hero {
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */
