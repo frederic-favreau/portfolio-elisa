@@ -95,6 +95,8 @@ header nav#nav-top ul li:last-child a {
 }
 
 main section#hero-section div#container-hero {
+  padding-top: 50px;
+  padding-bottom: 90px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -110,21 +112,29 @@ main section#hero-section div#container-hero div#item-left-hero p#description-he
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 140px;
 }
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero a:first-child {
-  padding: 5px 20px;
+  padding: 5px 40px;
   border-radius: 50px;
   background-color: #7e68fa;
   color: #fff;
 }
 main section#hero-section div#container-hero div#item-right-hero {
   width: 50%;
+  display: flex;
+}
+main section#hero-section div#container-hero div#item-right-hero img {
+  width: 469px;
+  height: auto;
+  margin: auto;
+  text-align: center;
 }
 main section#about-me-section {
   background-color: #f05d7b;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 main section#about-me-section div#container-about-me-section p {
   font-size: 36px;
