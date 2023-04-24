@@ -164,6 +164,7 @@ main section#skill-section div#container-skill-section div.item-skill-common {
   width: 330px;
   height: 180px;
   padding: 10px;
+  border-radius: 10px;
   background-color: #f05d7b;
 }
 main section#skill-section div#container-skill-section div.item-skill-common h4 {
@@ -177,4 +178,16 @@ main section#skill-section div#container-skill-section div.item-skill-common ul.
 main section#skill-section div#container-skill-section div.item-skill-common ul.picto-skill-list li img {
   width: 50px;
   height: 50px;
+}
+main section#portfolio-section {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+main section#portfolio-section p.sub-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

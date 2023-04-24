@@ -204,6 +204,7 @@ main {
         width: 330px;
         height: 180px;
         padding: 10px;
+        border-radius: 10px;
         background-color: $pink;
 
         h4 {
@@ -223,6 +224,22 @@ main {
           }
         }
       }
+    }
+  }
+
+  // ---------- PORTFOLIO SECTION ----------
+
+  section#portfolio-section {
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    p.sub-title {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
   }
 }
