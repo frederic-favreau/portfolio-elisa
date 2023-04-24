@@ -58,6 +58,12 @@ h3 {
   margin-bottom: 100px;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 42px;
+}
+
 header nav#nav-top {
   display: flex;
   padding: 20px 0;
@@ -142,4 +148,33 @@ main section#about-me-section div#container-about-me-section p {
   letter-spacing: 2px;
   text-align: start;
   color: #fff;
+}
+main section#skill-section {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+main section#skill-section h3#title-skill-section {
+  color: #222;
+}
+main section#skill-section div#container-skill-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+main section#skill-section div#container-skill-section div.item-skill-common {
+  width: 330px;
+  height: 180px;
+  padding: 10px;
+  background-color: #f05d7b;
+}
+main section#skill-section div#container-skill-section div.item-skill-common h4 {
+  text-align: center;
+}
+main section#skill-section div#container-skill-section div.item-skill-common ul.picto-skill-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+main section#skill-section div#container-skill-section div.item-skill-common ul.picto-skill-list li img {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */

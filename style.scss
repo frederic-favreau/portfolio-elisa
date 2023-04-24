@@ -2,6 +2,7 @@ $blue-color: #7e68fa;
 $black: #000;
 $semi-black: #222;
 $white: #fff;
+$pink: #f05d7b;
 
 *,
 ::after,
@@ -61,6 +62,12 @@ h3 {
   color: $white;
   text-align: center;
   margin-bottom: 100px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 42px;
 }
 
 // ---------- NAV BAR SECTION ----------
@@ -161,12 +168,10 @@ main {
     }
   }
 
-
-
   // ---------- ABOUT-ME SECTION ----------
 
   section#about-me-section {
-    background-color: #f05d7b;
+    background-color: $pink;
     padding-top: 70px;
     padding-bottom: 90px;
 
@@ -177,6 +182,46 @@ main {
         letter-spacing: 2px;
         text-align: start;
         color: $white;
+      }
+    }
+  }
+
+  // ---------- SKILL SECTION ----------
+
+  section#skill-section {
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    h3#title-skill-section {
+      color: $semi-black;
+    }
+
+    div#container-skill-section {
+      display: flex;
+      justify-content: space-evenly;
+
+      div.item-skill-common {
+        width: 330px;
+        height: 180px;
+        padding: 10px;
+        background-color: $pink;
+
+        h4 {
+          text-align: center;
+        }
+
+        ul.picto-skill-list {
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 20px;
+
+          li {
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
       }
     }
   }
