@@ -27,35 +27,57 @@ ul {
 h1 {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 36px;
-  line-height: 26px;
-  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 26px;
+  line-height: 36px;
   color: #222;
-  margin-bottom: 77px;
+}
+@media screen and (min-width: 950px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 2px;
+    margin-bottom: 77px;
+  }
 }
 
 h2 {
   text-align: center;
-  font-family: "Italiana";
+  font-family: "Italiana", sans-serif;
   font-weight: 400;
-  font-size: 90px;
-  line-height: 88px;
+  font-size: 60px;
+  line-height: 70px;
   color: #222;
-  margin-bottom: 77px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+@media screen and (min-width: 950px) {
+  h2 {
+    font-size: 90px;
+    line-height: 88px;
+    letter-spacing: 2px;
+    margin-bottom: 77px;
+  }
 }
 
 h3 {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 40px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  margin-bottom: 100px;
+}
+@media screen and (min-width: 950px) {
+  h3 {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 77px;
+  }
 }
 
 h4 {
@@ -63,11 +85,29 @@ h4 {
   font-size: 26px;
   line-height: 42px;
 }
+@media screen and (min-width: 950px) {
+  h4 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 42px;
+}
+@media screen and (min-width: 950px) {
+  h5 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
 
 header nav#nav-top {
   display: flex;
-  padding: 20px 0;
-  margin-bottom: 40px;
+  align-items: center;
+  padding: 10px;
 }
 header nav#nav-top div#text-logo {
   font-family: "Raleway";
@@ -83,9 +123,36 @@ header nav#nav-top div#text-logo {
 header nav#nav-top ul {
   display: flex;
 }
+header nav#nav-top ul li#burger-menu {
+  display: block;
+  margin: inherit;
+}
+@media screen and (min-width: 950px) {
+  header nav#nav-top ul li#burger-menu {
+    display: none;
+  }
+}
+header nav#nav-top ul li#burger-menu a div#container-menu-burger {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+header nav#nav-top ul li#burger-menu a div#container-menu-burger div.burger-menu-common {
+  width: 40px;
+  height: 4px;
+  margin: 5px;
+  background-color: #000;
+}
 header nav#nav-top ul li {
+  display: none;
   margin-left: 30px;
   margin-right: 30px;
+}
+@media screen and (min-width: 950px) {
+  header nav#nav-top ul li {
+    display: block;
+  }
 }
 header nav#nav-top ul li a {
   font-weight: 600;
@@ -100,70 +167,154 @@ header nav#nav-top ul li:last-child a {
   color: #7e68fa;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
 main section#hero-section div#container-hero {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 90px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 main section#hero-section div#container-hero div#item-left-hero {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   font-size: 24px;
   line-height: 26px;
   letter-spacing: 0.2px;
-  width: 50%;
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero div#item-left-hero {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    width: 50%;
+  }
 }
 main section#hero-section div#container-hero div#item-left-hero p#description-hero {
   text-align: start;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero div#item-left-hero p#description-hero {
+    text-align: start;
+  }
 }
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 140px;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 140px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
+    text-align: start;
+  }
+}
+main section#hero-section div#container-hero div#item-left-hero div#btn-hero a {
+  text-align: center;
+  margin: 10px;
 }
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero a:first-child {
+  text-align: center;
   padding: 5px 40px;
   border-radius: 50px;
   background-color: #7e68fa;
   color: #fff;
 }
 main section#hero-section div#container-hero div#item-right-hero {
-  width: 50%;
   display: flex;
+  text-align: center;
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero div#item-right-hero {
+    width: 50%;
+  }
 }
 main section#hero-section div#container-hero div#item-right-hero img {
-  width: 469px;
+  width: 269px;
   height: auto;
   margin: auto;
-  text-align: center;
+}
+@media screen and (min-width: 950px) {
+  main section#hero-section div#container-hero div#item-right-hero img {
+    width: 469px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
 }
 main section#about-me-section {
   background-color: #f05d7b;
-  padding-top: 70px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 950px) {
+  main section#about-me-section {
+    padding-bottom: 90px;
+  }
+}
+main section#about-me-section div#container-about-me-section {
+  padding: 10px;
 }
 main section#about-me-section div#container-about-me-section p {
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 2px;
   text-align: start;
   color: #fff;
 }
+@media screen and (min-width: 950px) {
+  main section#about-me-section div#container-about-me-section p {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
 main section#skill-section {
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 950px) {
+  main section#skill-section {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
 }
 main section#skill-section h3#title-skill-section {
   color: #222;
 }
 main section#skill-section div#container-skill-section {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+@media screen and (min-width: 950px) {
+  main section#skill-section div#container-skill-section {
+    justify-content: space-evenly;
+  }
 }
 main section#skill-section div#container-skill-section div.item-skill-common {
-  width: 330px;
+  width: 295px;
   height: 180px;
   padding: 10px;
+  margin: 10px auto;
   border-radius: 10px;
   background-color: #f05d7b;
 }
@@ -180,14 +331,44 @@ main section#skill-section div#container-skill-section div.item-skill-common ul.
   height: 50px;
 }
 main section#portfolio-section {
-  padding-top: 70px;
   padding-bottom: 90px;
+}
+@media screen and (min-width: 950px) {
+  main section#portfolio-section {
+    padding-top: 70px;
+  }
 }
 main section#portfolio-section p.sub-title {
   font-weight: 500;
   font-size: 36px;
-  line-height: 26px;
+  line-height: 46px;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+main section#portfolio-section div#container-portfolio-section div.projet-portfolio h5.title-projet-portfolio {
+  width: 150px;
+  height: 50px;
+  font-family: "Italiana", sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 5px 5px 5px 30px;
+  background-color: #f05d7b;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+@media screen and (min-width: 950px) {
+  main section#portfolio-section div#container-portfolio-section div.projet-portfolio h5.title-projet-portfolio {
+    font-size: 60px;
+    line-height: 88px;
+  }
+}
+main section#portfolio-section div#container-portfolio-section div.projet-portfolio img {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+main footer {
+  background-color: #f05d7b;
+  height: 243px;
 }/*# sourceMappingURL=style.css.map */
