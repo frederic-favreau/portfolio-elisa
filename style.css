@@ -76,7 +76,6 @@ h3 {
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 2px;
-    margin-bottom: 77px;
   }
 }
 
@@ -215,23 +214,23 @@ main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (min-width: 550px) {
+  main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 950px) {
   main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 140px;
-    text-align: start;
-  }
-}
-@media screen and (min-width: 950px) {
-  main section#hero-section div#container-hero div#item-left-hero div#btn-hero {
     text-align: start;
   }
 }
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero a {
+  max-width: 320px;
   text-align: center;
-  margin: 10px;
+  margin: 10px auto;
 }
 main section#hero-section div#container-hero div#item-left-hero div#btn-hero a:first-child {
   text-align: center;
@@ -243,6 +242,7 @@ main section#hero-section div#container-hero div#item-left-hero div#btn-hero a:f
 main section#hero-section div#container-hero div#item-right-hero {
   display: flex;
   text-align: center;
+  margin-top: 20px;
 }
 @media screen and (min-width: 950px) {
   main section#hero-section div#container-hero div#item-right-hero {
@@ -273,13 +273,14 @@ main section#about-me-section {
   }
 }
 main section#about-me-section div#container-about-me-section {
-  padding: 10px;
+  padding: 20px;
 }
 main section#about-me-section div#container-about-me-section p {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 2px;
   text-align: start;
+  margin-top: 15px;
   color: #fff;
 }
 @media screen and (min-width: 950px) {
@@ -296,27 +297,37 @@ main section#skill-section {
   main section#skill-section {
     padding-top: 70px;
     padding-bottom: 90px;
+    padding-bottom: inherit;
   }
 }
 main section#skill-section h3#title-skill-section {
+  margin-bottom: 15px;
   color: #222;
 }
 main section#skill-section div#container-skill-section {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 950px) {
   main section#skill-section div#container-skill-section {
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 main section#skill-section div#container-skill-section div.item-skill-common {
-  width: 295px;
+  width: 288px;
   height: 180px;
   padding: 10px;
-  margin: 10px auto;
+  margin: 15px;
   border-radius: 10px;
   background-color: #f05d7b;
+}
+@media screen and (min-width: 950px) {
+  main section#skill-section div#container-skill-section div.item-skill-common {
+    width: 350px;
+  }
 }
 main section#skill-section div#container-skill-section div.item-skill-common h4 {
   text-align: center;
@@ -359,6 +370,8 @@ main section#portfolio-section div#container-portfolio-section div.projet-portfo
 }
 @media screen and (min-width: 950px) {
   main section#portfolio-section div#container-portfolio-section div.projet-portfolio h5.title-projet-portfolio {
+    width: 350px;
+    height: 80px;
     font-size: 60px;
     line-height: 88px;
   }
@@ -368,7 +381,51 @@ main section#portfolio-section div#container-portfolio-section div.projet-portfo
   max-width: 1200px;
   margin-bottom: 40px;
 }
-main footer {
+
+footer {
   background-color: #f05d7b;
-  height: 243px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px;
+}
+footer p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 950px) {
+  footer p {
+    font-size: 56px;
+    line-height: 66px;
+  }
+}
+footer a#btn-mail-footer {
+  width: 150px;
+  height: 52px;
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  background-color: #F5A0B2;
+  color: #fff;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+@media screen and (min-width: 950px) {
+  footer a#btn-mail-footer {
+    width: 440px;
+    height: 107px;
+    font-size: 53px;
+    line-height: 107px;
+  }
 }/*# sourceMappingURL=style.css.map */
