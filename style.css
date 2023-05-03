@@ -456,7 +456,9 @@ footer {
   height: fit-content;
   padding: 40px;
 }
-footer p {
+footer a {
+  display: block;
+  margin: 0 auto;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -468,7 +470,7 @@ footer p {
   color: #fff;
 }
 @media screen and (min-width: 950px) {
-  footer p {
+  footer a {
     font-size: 56px;
     line-height: 66px;
   }

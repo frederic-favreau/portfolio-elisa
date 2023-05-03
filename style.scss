@@ -507,7 +507,9 @@ footer {
   height: fit-content;
   padding: 40px;
 
-  p {
+  a {
+    display: block;
+    margin: 0 auto;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
