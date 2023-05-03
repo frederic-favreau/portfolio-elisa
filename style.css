@@ -344,18 +344,14 @@ main section#skill-section div#container-skill-section div.item-skill-common ul.
 main section#portfolio-section {
   padding-bottom: 90px;
 }
+main section#portfolio-section h3#title-projet-portfolio {
+  color: #000;
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 950px) {
   main section#portfolio-section {
     padding-top: 70px;
   }
-}
-main section#portfolio-section p.sub-title {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 46px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 main section#portfolio-section div#container-portfolio-section div.projet-portfolio h5.title-projet-portfolio {
   width: 150px;
