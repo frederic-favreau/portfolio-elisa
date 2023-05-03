@@ -186,10 +186,11 @@ header div#modal.open .close-modal {
   right: 10px;
   font-size: 16px;
   padding: 10px;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #f05d7b;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
 }
 header div#modal.open .close-modal:hover {
   background-color: #fff;
@@ -318,6 +319,7 @@ main section#about-me-section {
   background-color: #f05d7b;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 950px) {
   main section#about-me-section {
@@ -353,7 +355,8 @@ main section#skill-section {
   }
 }
 main section#skill-section h3#title-skill-section {
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 40px;
   color: #222;
 }
 main section#skill-section div#container-skill-section {
@@ -398,19 +401,23 @@ main section#portfolio-section {
 }
 main section#portfolio-section h3#title-projet-portfolio {
   color: #000;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 950px) {
   main section#portfolio-section {
     padding-top: 70px;
   }
 }
+main section#portfolio-section div#container-portfolio-section div.projet-portfolio {
+  margin-top: 20px;
+}
 main section#portfolio-section div#container-portfolio-section div.projet-portfolio h5.title-projet-portfolio {
-  width: 150px;
-  height: 50px;
+  width: 110px;
+  height: 35px;
   font-family: "Italiana", sans-serif;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 35px;
   border-radius: 5px 5px 5px 30px;
   background-color: #f05d7b;
   text-align: center;
@@ -428,6 +435,19 @@ main section#portfolio-section div#container-portfolio-section div.projet-portfo
   width: 100%;
   max-width: 1200px;
   margin-bottom: 40px;
+}
+main section#portfolio-section a {
+  width: 240px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 60px;
+  font-size: 20px;
+  letter-spacing: 0.3;
+  color: #fff;
+  background-color: #f5a0b2;
 }
 
 footer {
